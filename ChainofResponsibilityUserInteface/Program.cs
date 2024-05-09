@@ -1,6 +1,9 @@
+using ChainofResponsibilityUserInteface.ChainOfRes.DataAccessLayer.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<ChainOfRespDb>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

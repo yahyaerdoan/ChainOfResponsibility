@@ -1,0 +1,31 @@
+﻿@model CustomerProcessViewModel
+@{
+    Layout = null;
+}
+<a href="~/lib/bootstrap/dist/css/bootstrap.css.map"></a>
+<a href="~/lib/bootstrap/dist/css/bootstrap.min.css.map"></a>
+<a href="~/lib/bootstrap/dist/css/bootstrap.rtl.css.map"></a>
+<a href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"></a>
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<form method="post">
+
+    <div class="container">
+        <br />  <br />
+        <div class="alert alert-success">
+            <h2> Credi Process</h2>
+            <label>First Name</label>
+            <input type="text" asp-for="FirstName" class="form-control" />
+            <br />
+            <label>Last Name</label>
+            <input type="text" asp-for="LastName" class="form-control" />
+            <br />
+            <label>Loan amount</label>
+            <input type="text" asp-for="Amount" class="form-control" />
+            <br />
+            <button class="btn btn-warning">Go for loan</button>
+        </div>
+    </div>
+</form>
